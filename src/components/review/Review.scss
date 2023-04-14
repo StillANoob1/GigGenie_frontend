@@ -1,0 +1,54 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0px;
+    .user {
+      display: flex;
+      align-items: center;
+      // font-size: 3rem;
+      .pp {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+      }
+
+      .country {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #74767e;
+
+        img {
+          width: 2.5rem;
+        }
+      }
+    }
+
+    .stars {
+      display: flex;
+      gap: 5px;
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffc108;
+      }
+    }
+
+    .helpful {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+
+      img {
+        width: 2.1rem;
+      }
+    }
+  }

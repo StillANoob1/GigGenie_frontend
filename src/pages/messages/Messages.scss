@@ -1,0 +1,74 @@
+.messages {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      width: 90%;
+      padding: 3rem 0px;
+  
+      .title {
+        display: flex;
+        justify-content: space-between;
+        h1{
+          font-size: 3rem;
+      }
+  
+        button {
+          background-color: #00008b;
+          color: white;
+          font-weight: 500;
+          border: none;
+          padding: 1rem;
+          cursor: pointer;
+        }
+      }
+  
+      table {
+        width: 100%;
+  
+        tr {
+          
+          height: 10rem;
+          font-size: 2rem;
+          th {
+            text-align: left;
+          }
+          td {
+            padding: 1rem;
+  
+            &:first-child {
+              font-weight: 500;
+            }
+            
+            &:nth-child(2),
+            &:nth-child(3) {
+              color: gray;
+            }
+          }
+  
+          button {
+            background-color: #00008b;
+            color: white;
+            padding: 1rem;
+            border: none;
+            cursor: pointer;
+          }
+  
+          &.active {
+            background-color: #1dbf730f;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px){
+    .messages{
+        .container{
+            table{
+                tr{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

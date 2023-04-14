@@ -1,0 +1,46 @@
+.reviews {
+    margin-top: 4rem;
+
+
+    hr {
+      height: 0;
+      border: 0.5px solid lightgray;
+      margin: 4rem 0px;
+    }
+    .addReview{
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-size: 2rem;
+      .reviewForm{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        input{
+          padding: 1rem;
+          width: 20rem;
+
+        }
+        select{
+          padding: 1rem;
+          width: 10rem;
+          text-align: center;
+          font-size: 1.5rem;
+         
+        }
+        button{
+          padding: 1rem;
+          color: white;
+          width: 10rem;
+          cursor: pointer;
+          background-color: #00008b;
+          border-radius: 10px;
+          border: none;
+          &:hover{
+            background-color: blue;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,70 @@
+.mygigs{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0px;
+    color: #555;
+    .container{
+        width: 90%;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-size: 3rem;
+            }
+            button{
+                color: white;
+                background-color: #00008b;
+                padding: 10px 15px;
+                border-radius: 5px;
+                border: none;
+            }
+        }
+        table{
+            width: 100%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            tr{
+                
+                height: 5rem;
+                font-size: 2rem;
+               
+                th{
+                    text-align: left;
+                    
+                }
+                td{
+                    sup{
+                        font-size: 1.2rem;
+                      }
+                    .image{
+                        width: 5rem;
+                        height: 2.5rem;
+                        object-fit: cover;
+                    }
+                    .delete{
+                        width: 2rem;
+                        height: 2rem;
+                        cursor: pointer;
+                        object-fit: cover;
+                    }
+                }
+                &:nth-child(even) {
+                    background-color: #1dbf730f;
+                  }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mygigs{
+        .container{
+            table{
+                tr{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

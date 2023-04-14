@@ -1,0 +1,53 @@
+.proCard{
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    box-shadow: 5px 5px 10px 3px gray;
+    
+    
+    
+    img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+    .sec{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+        .title{
+            span{
+                font-size: 10px;
+                padding: 5px 0px;
+                // margin: 10px 0;
+                overflow-wrap: break-word;
+            }
+            h3{
+                font-size: 12px;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .proCard{
+        width: 200px;
+        height: 250px;
+        // font-size: 2rem;
+        
+    }
+    
+}

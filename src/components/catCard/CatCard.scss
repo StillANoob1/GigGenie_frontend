@@ -1,0 +1,38 @@
+.catCard{
+    width: 180px;
+    height: 230px;
+    position: relative;
+
+   
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .title{
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        color: white !important;
+        font-size: 14px;
+       
+
+    }
+    .desc{
+        position: absolute;
+        top: 45px;
+        left: 15px;
+        color: white !important;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:450px) {
+    .catCard{
+        width: 200px;
+        height: 250px;
+        font-size: 2rem;
+        
+    }
+    
+}

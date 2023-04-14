@@ -1,0 +1,293 @@
+.gigcard {
+  width: 30rem;
+  // height: 35rem;
+  // margin-top: 30px;
+  box-shadow: 5px 5px 15px 0px lightgray;
+  img {
+    width: 100%;
+    height: 22.5rem;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .mobiletitle {
+    display: none;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+    .gigTitle {
+      p {
+        color: #404145;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .star {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          object-fit: cover;
+        }
+        span {
+          color: #ffb33e;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  hr {
+    height: 0px;
+    border: 0.5px solid lightgray;
+    // margin: 5px 0px;
+  }
+  .detail {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+    }
+    .right {
+      span {
+        color: #404145;
+        font-size: 1.2rem;
+        color: #404145;
+        // margin-bottom: 1.2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .mobilehr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .fragg {
+    display: flex;
+    justify-content: center;
+
+    .gigcard {
+      margin-bottom: 2rem;
+      position: relative;
+      width: 100%;
+      // height: 28rem;
+      .mobileimg {
+        display: flex;
+        gap: 1rem;
+
+        img {
+          width: 70%;
+          max-width: 70%;
+          height: unset;
+        }
+        .mobiletitle {
+          display: flex;
+          flex-direction: column;
+          padding: 0 1rem;
+          width: 100%;
+          p {
+            color: #404145;
+            font-size: 2rem;
+            font-weight: 500;
+            max-width: 90%;
+
+            margin-bottom: 1rem;
+          }
+          .star {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            img {
+              width: 2rem;
+              height: 2rem;
+              object-fit: cover;
+            }
+            span {
+              color: #ffb33e;
+              font-size: 2rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .mobile {
+        display: flex;
+        justify-content: space-between;
+
+        .info {
+          .user {
+            img {
+              width: 4rem;
+              height: 4rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            span {
+              font-size: 2.5rem;
+              font-weight: 500;
+            }
+          }
+
+          .gigTitle {
+            display: none;
+          }
+        }
+
+        .detail {
+          img {
+            display: none;
+          }
+          .right {
+            span {
+              font-size: 1.5rem;
+              color: #404145;
+            }
+            h2 {
+              text-align: center;
+              font-size: 2.5rem;
+              font-weight: bold;
+            }
+          }
+        }
+
+        hr {
+          display: none;
+        }
+      }
+      .mobilehr {
+        display: block;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .fragg {
+    display: flex;
+    justify-content: center;
+
+    .gigcard {
+      margin-bottom: 2rem;
+      position: relative;
+      width: 100%;
+      // height: 28rem;
+      .mobileimg {
+        display: flex;
+        gap: 0.5rem;
+
+        img {
+          width: 70%;
+          max-width: 70%;
+        }
+        .mobiletitle {
+          display: flex;
+          flex-direction: column;
+          //   padding: 1rem;
+          width: 100%;
+          p {
+            color: #404145;
+            font-size: 1.5rem;
+            font-weight: 500;
+            max-width: 90%;
+
+            margin-bottom: 1rem;
+          }
+          .star {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            img {
+              width: 1.5rem;
+              height: 1.5rem;
+              object-fit: cover;
+            }
+            span {
+              color: #ffb33e;
+              font-size: 1.5rem;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .mobile {
+        display: flex;
+        justify-content: space-between;
+
+        .info {
+          .user {
+            img {
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            span {
+              font-size: 2rem;
+              font-weight: 500;
+            }
+          }
+
+          .gigTitle {
+            display: none;
+          }
+        }
+
+        .detail {
+          img {
+            display: none;
+          }
+          .right {
+            span {
+              font-size: 1rem;
+              color: #404145;
+            }
+            h2 {
+              text-align: center;
+              font-size: 2rem;
+              font-weight: bold;
+            }
+          }
+        }
+
+        hr {
+          display: none;
+        }
+      }
+      .mobilehr {
+        display: block;
+      }
+    }
+  }
+}

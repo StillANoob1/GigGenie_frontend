@@ -1,0 +1,188 @@
+.gigs{
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0px;
+font-family: 'Alice', serif;
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        p{
+            font-size: 1.5rem;
+            color: #74767e;
+
+        }
+        h1{
+            font-weight: bold;
+            font-size: 4rem;
+
+        }
+        .p{
+            font-size: 2rem;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                span{
+                    font-size: 2rem;
+                    color: black;
+                    font-weight: bold;
+                }
+                input{
+                    outline: none;
+                    padding: .5rem;
+                    border-radius: 3px;
+
+                }
+                button{
+                    color: white;
+                    background-color: #00008b;
+                    padding: .8rem 1.2rem;
+                    border-radius: 5px;
+                    border: none;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                position: relative;
+                font-size: 2rem;
+                .sort{
+                    color: black;
+                    font-weight: bold;
+
+                }
+                .sell{
+                   color: #62646a;
+                  
+                }
+                img{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    object-fit: cover;
+                }
+                .options{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 2.5rem;
+                    right: 0px;
+                    color: #74767e;
+                    border: 1px solid lightgray;
+                    gap: 1rem;
+                    padding: 1.5rem 1rem;
+                    border-radius: 10px;
+                    background-color: white;
+                    cursor: pointer;
+                    padding-right: 2rem;
+                    
+                }
+            }
+        }
+        .cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            
+        }
+    }
+}
+//  scss for responsive design
+
+@media screen and (max-width: 768px) {
+   .gigs{
+    .container{
+        .bottom{
+            flex-direction: column;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+    }
+   }
+  }
+  @media screen and (max-width: 576px){
+    .gigs{
+        .container{
+            p{
+                font-size: 2rem;
+                color: #74767e;
+    
+            }
+            h1{
+                font-weight: bold;
+                font-size: 4rem;
+    
+            }
+            .p{
+                font-size: 2rem;
+            }
+            .bottom{
+                .left{
+                    
+                  
+                    input{
+                       width: 25%;
+    
+                    }
+                   
+                }
+            }
+        }
+       }
+  }
+  @media screen and (max-width: 540px){
+    .gigs{
+        .container{
+            .cards{
+                
+                flex-direction: column;
+                width: 100%;
+                // height: 100%;
+                gap: 0rem;
+
+
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 500px){
+    .gigs{
+        .container{
+           
+            .p{
+              min-width: 70%;
+            }
+            .bottom{
+                .left{
+                    justify-content: space-between;
+                    
+                   
+                    input{
+                        width: 33%;
+    
+                    }
+                   
+                }
+            }
+        }
+       }
+  }
+  @media screen and (max-width: 375px){
+  .bottom{
+    .left{
+        flex-wrap: wrap;
+    }
+  }
+  }
+
+  
