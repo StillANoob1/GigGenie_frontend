@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Navbar.scss";
 import {Link, useLocation, useNavigate } from 'react-router-dom';
-import profileimg from "../../img/man.png";
+
 import nodp from "../../img/nodp.png";
 import axios from 'axios';
 import close from "../../img/close.png";
@@ -61,9 +61,9 @@ const Navbar = () => {
                     <span className='dot'>.</span>
                 </div>
                 <div className={mobileLinks ? "links mobileLinks" : "links"}>
-                    <span>Business</span>
+                    
 
-                    <span className='explore' style={{cursor:'pointer'}} onClick={()=>navigate(`/gigs?category=`)}>Explore</span>
+                    <span className='explore' style={{cursor:'pointer'}} onClick={()=>navigate(`/gigs?category=`)}>Explore Gigs</span>
                     {user && <>{user?.isSeller && <>
                                     <Link to='/mygigs' className="mobilelink">Gigs</Link>
                                     <Link to='/add' className="mobilelink">Add New Gig</Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
             </div>
             {user && (
                         <div className="mobileuser" onClick={() => setMobileoptions(!mobileoptions)}>
-                            <img src={user?.img || profileimg} alt="" />
+                            <img src={user?.img || nodp} alt="" />
                             <span>{user?.username}</span>
                             {mobileoptions && (<div className="mobileoptions">
                                 {user.isSeller && <>

@@ -287,6 +287,9 @@ font-family: 'Roboto', sans-serif;
           color: #62646a;
           height: 100vh;
           width: 150px;
+          .explore{
+            display: block;
+          }
           
           .mobilelink{
             display: flex;
@@ -297,6 +300,7 @@ font-family: 'Roboto', sans-serif;
             display: block;
             font-weight: 900;
             color: #62646a;
+            
           }
           button{
             display: block;
