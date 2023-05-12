@@ -9,7 +9,7 @@ import freelance from "../../../src/img/freelance.jpg"
 
 
 import { cards } from "../../../src/data";
-// import { projects } from "../../../src/data";
+
 import ProCard from '../../components/proCard/ProCard';
 import { useQuery } from '@tanstack/react-query';
 import { serverUrl } from '../../utils/serverUrl';
@@ -116,7 +116,7 @@ const Home = () => {
       <div className="proSlide">
         <Slide>
           
-            {isLoading? <Loader/> : isError?"something went wrong ...":data?.map((item) => {
+            {isLoading? <Loader/> : isError?<div><h1>something went wrong.....</h1></div>:data?.map((item) => {
               return <ProCard item={item} key={item._id} />
             })
           }
