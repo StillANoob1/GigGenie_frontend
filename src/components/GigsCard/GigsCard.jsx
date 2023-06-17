@@ -17,11 +17,11 @@ const GigsCard = ({ item }) => {
     const { data, isLoading, error, refetch } = useQuery({
         queryKey: [item.userId],
         queryFn: () =>
-            axios.get(`${serverUrl}/api/users/${item.userId._id}`).then((res) => {
+            axios.get(`${serverUrl}/api/users/${item.userId}`).then((res) => {
                 return res.data;
             }),
     });
-
+console.log(item.userId);
 
 
     return (
