@@ -21,7 +21,7 @@ const GigsCard = ({ item }) => {
                 return res.data;
             }),
     });
-console.log(item.userId);
+
 
 
     return (
